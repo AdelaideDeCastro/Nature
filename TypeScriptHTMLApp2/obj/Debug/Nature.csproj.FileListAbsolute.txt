@@ -1,0 +1,6 @@
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\Nature.dll.config
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\Nature.dll
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\bin\Nature.pdb
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.csprojResolveAssemblyReference.cache
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.dll
+c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.pdb
