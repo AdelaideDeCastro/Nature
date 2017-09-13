@@ -1,6 +1,59 @@
 ﻿body {
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    background-image: url(image/way.jpg);
-    background-repeat: no-repeat;
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+    color: #ffdab3;
+}
+
+.legend {
+    color: #cc6900;
+}
+
+.showHorse {
+    display: none;
+}
+
+.showMe {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 335px;
+    width: 834px;
+    height: 566px;
+}
+
+#first {
+    display: block;
+}
+
+#arrowLeft, #arrowRight {
+    width: 20px;
+    height: 20px;
+}
+
+#arrowLeft {
+    display: none;
+    position: relative;
+    top: 70px;
+    left: 300px;
+}
+
+#arrowRight {
+    position: relative;
+    top: 70px;
+    left: 1140px;
+}
+
+.horses {
+    position: relative;
+    top: 420px;
+}
+
+fieldset {
+    border: 2px double #ff8000;
+}
+
+label {
+    color: #994f00;
+}

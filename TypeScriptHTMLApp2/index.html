@@ -3,18 +3,40 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Farm Holiday</title>
+    <title>Nature is your friend</title>
     <link rel="stylesheet" href="css/nature.css" type="text/css" />
-    
 </head>
 <body>
-    <header></header>
-    <div>
-        <img src="image/cascina.jpg" />
+    <header>
+        <img src="image/logo.png" />
+    </header>
+    <div id="showImage">
+        <img src="image/cascina.jpg" class="showMe" id="first"/>
+        <img src="image/interno.jpg" class="showMe" />
+        <img src="image/esterno.jpeg" class="showMe" />
+        <img src="image/evento.jpeg" class="showMe" />
+        <img src="image/giochi.jpeg" class="showMe" />
+        <img src="image/notte.jpeg" class="showMe" />
+        <img src="image/pavone.jpg" class="showMe" />
+        <img src="image/animali.jpeg" class="showMe" />
+        <img src="image/arrowLeft.png" id="arrowLeft" class="clickMe"/>
+        <img src="image/arrowRight.png" id="arrowRight" class="clickMe"/>
     </div>
-    <h1>Agritourism La Cascina Toscana</h1>
-
-    <div id=""></div>
-    <script src=".js"></script>
+    <div class="horses">
+        <form>
+            <fieldset>
+                <legend class="legend">Your age is:</legend>
+                <input type="radio" name="age" value="0-6" class="checkAge"/> <label for="0-6">0-6</label><br />
+                <input type="radio" name="age" value="7-15" class="checkAge"/> <label for="7-15">7-15</label><br />
+                <input type="radio" name="age" value="16-over" class="checkAge"/> <label for="16-Over5">16-Over</label>
+            </fieldset>
+        </form>
+        <img src="image/pony.jpg" id="pony" class="showHorse" />
+        <img src="image/medio.jpg" id="medio" class="showHorse" />
+        <img src="image/download (1).jpg" id="grande" class="showHorse" />
+    </div>
+<script src="js/jquery.js"></script>
+ <!--   <script src="js/natureJS.js"></script>-->
+    <script src="js/app.js"></script>
 </body>
 </html>

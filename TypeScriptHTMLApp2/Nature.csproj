@@ -23,18 +23,49 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\nature.css" />
+    <Content Include="image\261.jpg" />
+    <Content Include="image\airdryer.png" />
+    <Content Include="image\animali.jpeg" />
+    <Content Include="image\appartamento.jpeg" />
+    <Content Include="image\arrowLeft.png" />
+    <Content Include="image\arrowRight.png" />
+    <Content Include="image\bath.png" />
+    <Content Include="image\botanica.jpeg" />
     <Content Include="image\cascina.jpg" />
+    <Content Include="image\cass.png" />
+    <Content Include="image\cielo.jpeg" />
+    <Content Include="image\condition.png" />
+    <Content Include="image\download %281%29.jpg" />
+    <Content Include="image\esterno.jpeg" />
+    <Content Include="image\evento.jpeg" />
+    <Content Include="image\F_130234.jpg" />
+    <Content Include="image\giochi.jpeg" />
+    <Content Include="image\grande.jpg" />
+    <Content Include="image\horse.jpg" />
+    <Content Include="image\interno.jpg" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\medio.jpg" />
+    <Content Include="image\minibar.png" />
+    <Content Include="image\notte.jpeg" />
+    <Content Include="image\pavone.jpg" />
+    <Content Include="image\pony.jpg" />
+    <Content Include="image\secinterno.jfif" />
+    <Content Include="image\servizi_icone_ita.fw_.png" />
+    <Content Include="image\suite_sentiero.jpeg" />
+    <Content Include="image\tv.png" />
     <Content Include="image\way.jpg" />
-    <Content Include="..\..\..\..\..\..\..\Repository\Nature\index.html">
-      <Link>index.html</Link>
-    </Content>
+    <Content Include="image\wifi.png" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery.js" />
     <Content Include="js\natureJS.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="js\app.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

@@ -4,3 +4,9 @@ c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScri
 c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.csprojResolveAssemblyReference.cache
 c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.dll
 c:\users\adela\documents\visual studio 2015\Projects\TypeScriptHTMLApp2\TypeScriptHTMLApp2\obj\Debug\Nature.pdb
+C:\Repository\Nature\TypeScriptHTMLApp2\bin\Nature.dll.config
+C:\Repository\Nature\TypeScriptHTMLApp2\bin\Nature.dll
+C:\Repository\Nature\TypeScriptHTMLApp2\bin\Nature.pdb
+C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.csprojResolveAssemblyReference.cache
+C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.dll
+C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.pdb
