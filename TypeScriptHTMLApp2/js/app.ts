@@ -5,8 +5,10 @@
 window.onload = function () {
     let i = 0;
     showImage(i);
-    //startTimer();
-    horseRide();
+    checkDateIn();
+    //checkDateOut();
+    checkHorseRide();
+    //horseRide();
 
 }
 
@@ -38,77 +40,64 @@ function showImage(i) {
     }
     )
 }
+function checkDateIn() {
+    $('#datepicker').datepicker({
+        showAnim: "fold",
+        showOn: "button",
+        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+        buttonImageOnly: true,
+        showButtonPanel: true,
+        showOtherMonths: true,
+        dateRange: true,
+        stepMonths: 1,
 
-//function displayNextImage() {
-//    var images = $('img.showImage').length;
-//    for (var i = 0; i < images; i++) {
-
-//            $('img.showImage').eq(i).css("display", "none");
-//            if (i == images - 1)
-//                $('img.showImage').eq(0).css("display", "block");
-//            else
-//                $('img.showImage').eq(i + 1).css("display", "block");
-
-//        sleep(2200);
-//    };
-//}
-//function sleep(miliseconds) {
-//    var currentTime = new Date().getTime();
-//    while (currentTime + miliseconds >= new Date().getTime()) {
-//    }
-//}
-//function startTimer() {
-//    setInterval(displayNextImage, 8000);
-//}
-
-//function horseRide() {
-//var check = $('.checkAge').length;
-//    var age;
-//    $('.checkAge').click(function () {
-//        if (age < 7) {
-//            $('#pony').css("display", "block");
-//        } else if (age == 7 || age < 16) {
-//            $('#medio').css("display", "block");
-//        } else {
-//            $('#grande').css("display", "block");
-//        }
+    })
+    $('#dateRangepicker').datepicker({
+        showAnim: "fold",
+        showOn: "button",
+        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+        buttonImageOnly: true,
+        showButtonPanel: true,
+        showOtherMonths: true,
+        dateRange: true,
+        stepMonths: 1
+    })
+}
+//function checkDateOut() {
+//    $('#dateRangepicker').datepicker({
+//        showAnim: "fold",
+//        showOn: "button",
+//        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+//        buttonImageOnly: true,
+//        showButtonPanel: true,
+//        showOtherMonths: true,
+//        dateRange: true,
+//        stepMonths: 1
 //    })
 //}
-
-//function horseRide() {
-//    var check = $('.checkAge').length;
-//    var age;
-//    $('.checkAge').click(function () {
-//        if (check == 0) {
-//            $('#pony.showHorse').css("display", "block");
-//        }
-//        else if (check == 1) {
-//            $('#medio.showHorse').css("display", "block");
-//        }
-//        else {
-//            $('#grande.showHorse').css("display", "block");
-//        }
-//    }
-//    )
-//}
-
-function horseRide() {
-    var check = $('.checkAge').length;
-    var age;
-    $('.checkAge').click(function () {
-        for (var i = 0; i < check; i++) {
-            $('input.checkAge').eq(i).css('display', 'none');
-            if (i == check) {
-                $('#pony.showHorse').css("display", "block");
-            }
-            else if (i == check + 1) {
-                $('#medio.showHorse').css("display", "block");
-            }
-            else {
-                $('#grande.showHorse').css("display", "block");
-            }
-        }
+function checkHorseRide() {
+    $('#datepickerHorse').datepicker({
+        showAnim: "fold",
+        showOn: "button",
+        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
+        buttonImageOnly: true,
+        showButtonPanel: true,
+        showOtherMonths: true,
+        dateRange: true,
+        stepMonths: 1
     }
-    )
-}
-
+//function horseRide() {
+//            let age;
+//            $('.checkAge').click(function (evt) {
+//                if ((evt.currentTarget as any).value == "0-6") {
+//                    $('#pony.showHorse').css("display", "block");
+//                }
+//                else if ((evt.currentTarget as any).value == "7-15") {
+//                    $('#medio.showHorse').css("display", "block");
+//                }
+//                else {
+//                    $('#grande.showHorse').css("display", "block");
+//                }
+//            }
+//            )
+//        }

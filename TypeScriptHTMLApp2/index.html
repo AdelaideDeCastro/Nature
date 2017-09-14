@@ -5,11 +5,68 @@
     <meta charset="utf-8" />
     <title>Nature is your friend</title>
     <link rel="stylesheet" href="css/nature.css" type="text/css" />
-</head>
+    </head>
 <body>
-    <header>
+    <div id="container">
         <img src="image/logo.png" />
-    </header>
+        <div id="reservation">
+            <h2>Request a free estimate</h2>
+            <div class="day">
+                <form>
+                    <label>
+                        Check- in<br />
+                        <input type="text" name="checkDate" id="datepicker" /><br />
+                        Check-out<br />
+                        <input type="text" name="checkDate" id="dateRangepicker" />
+                    </label>
+                </form>
+            </div>
+            <div class="people">
+                <form>
+                    <label>
+                        Adults<br />
+                        <input type="number" name="adults" min="1" max="20" id="numadults" /><br />
+                        Children<br />
+                        <input type="number" name="children" min="0" max="10" id="numchildren" />
+                    </label>
+                </form>
+            </div>
+            <div class="infoguest">
+                <form>
+                    <label>
+                        Name<br />
+                        <input type="text" name="firstname" value="" /><br />
+                        Email<br />
+                        <input type="email" /><br />
+                        Phone<br />
+                        <input type="tel" />
+                    </label>
+                </form>
+            </div>
+            <div id="textarea">
+                <form>
+                    <label>
+                        Request<br />
+                        <textarea rows="8" cols="50" id="textarea"></textarea>
+                    </label>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <label>
+                        <input type="radio" name="accept" value="yes" />Agree with  Terms & Conditions
+                    </label>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <label>
+                        <button type="submit" id="">Send</button>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
     <div id="showImage">
         <img src="image/cascina.jpg" class="showMe" id="first"/>
         <img src="image/interno.jpg" class="showMe" />
@@ -23,19 +80,30 @@
         <img src="image/arrowRight.png" id="arrowRight" class="clickMe"/>
     </div>
     <div class="horses">
-        <form>
+        <h2>A Funny Ride</h2>
+        <form class="horse1">
+            <label>
+                Check 	availability<br />
+                <input type="text" name="checkDate" id="datepickerHorse" /><br /
+            </label>
+        </form>
+        <form class="horse1">
             <fieldset>
                 <legend class="legend">Your age is:</legend>
                 <input type="radio" name="age" value="0-6" class="checkAge"/> <label for="0-6">0-6</label><br />
                 <input type="radio" name="age" value="7-15" class="checkAge"/> <label for="7-15">7-15</label><br />
                 <input type="radio" name="age" value="16-over" class="checkAge"/> <label for="16-Over5">16-Over</label>
             </fieldset>
+
         </form>
         <img src="image/pony.jpg" id="pony" class="showHorse" />
         <img src="image/medio.jpg" id="medio" class="showHorse" />
-        <img src="image/download (1).jpg" id="grande" class="showHorse" />
-    </div>
+        <img src="image/grande.jpg" id="grande" class="showHorse" />
+    </div>    
 <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
  <!--   <script src="js/natureJS.js"></script>-->
     <script src="js/app.js"></script>
 </body>

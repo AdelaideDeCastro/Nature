@@ -18,7 +18,7 @@ header {
     display: none;
     position: absolute;
     top: 35px;
-    left: 335px;
+    left: 400px;
     width: 834px;
     height: 566px;
 }
@@ -56,4 +56,30 @@ fieldset {
 
 label {
     color: #994f00;
+}
+
+#container{
+    background-color: #ffff99;
+    width: 350px;
+    height: 390px;
+}
+
+#reservation{
+    background-color: #ffffb3;
+}
+
+#textarea{
+    width: 250px;
+}
+
+form{
+    padding-left: 15px;
+}
+
+.horses{
+    width: 1000px;
+
+}
+.horse1{
+    width: 400px;
 }
