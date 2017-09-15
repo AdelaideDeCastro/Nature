@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Nature is your friend</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="css/nature.css" type="text/css" />
-    </head>
+</head>
 <body>
     <div id="container">
         <img src="image/logo.png" />
@@ -13,62 +14,47 @@
             <h2>Request a free estimate</h2>
             <div class="day">
                 <form>
-                    <label>
+                    <label for="datepicker">
                         Check- in<br />
-                        <input type="text" name="checkDate" id="datepicker" /><br />
+                    </label>
+                        <input type="text" name="checkDatein" id="datepicker" /><br/>
+                    <label for="dateRangepicker">
                         Check-out<br />
-                        <input type="text" name="checkDate" id="dateRangepicker" />
                     </label>
-                </form>
-            </div>
-            <div class="people">
-                <form>
-                    <label>
+                        <input type="text" name="checkDateout" id="dateRangepicker" /><br />
+                    <label for="numadults">
                         Adults<br />
-                        <input type="number" name="adults" min="1" max="20" id="numadults" /><br />
-                        Children<br />
-                        <input type="number" name="children" min="0" max="10" id="numchildren" />
                     </label>
-                </form>
-            </div>
-            <div class="infoguest">
-                <form>
+                        <input type="number" name="adults" min="1" max="20" id="numadults" /><br />
+                    <label for="numchildren">
+                        Children<br />
+                    </label>
+                        <input type="number" name="children" min="0" max="10" id="numchildren" /><br />
                     <label>
                         Name<br />
-                        <input type="text" name="firstname" value="" /><br />
-                        Email<br />
-                        <input type="email" /><br />
-                        Phone<br />
-                        <input type="tel" />
                     </label>
-                </form>
-            </div>
-            <div id="textarea">
-                <form>
+                        <input type="text" name="firstname" value="" /><br />
+                    <label>
+                        Email<br />
+                    </label>
+                        <input type="email" /><br />
+                    <label>
+                        Phone<br />
+                    </label>
+                        <input type="tel" /><br />
                     <label>
                         Request<br />
-                        <textarea rows="8" cols="50" id="textarea"></textarea>
                     </label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <label>
-                        <input type="radio" name="accept" value="yes" />Agree with  Terms & Conditions
-                    </label>
-                </form>
-            </div>
-            <div>
-                <form>
-                    <label>
+                        <textarea rows="8" cols="50" id="textarea"></textarea><br />
+                        <input type="radio" name="accept" value="yes" />Agree with  Terms & Conditions<br />
                         <button type="submit" id="">Send</button>
-                    </label>
-                </form>
+
+</form>
             </div>
         </div>
     </div>
     <div id="showImage">
-        <img src="image/cascina.jpg" class="showMe" id="first"/>
+        <img src="image/cascina.jpg" class="showMe" id="first" />
         <img src="image/interno.jpg" class="showMe" />
         <img src="image/esterno.jpeg" class="showMe" />
         <img src="image/evento.jpeg" class="showMe" />
@@ -76,35 +62,41 @@
         <img src="image/notte.jpeg" class="showMe" />
         <img src="image/pavone.jpg" class="showMe" />
         <img src="image/animali.jpeg" class="showMe" />
-        <img src="image/arrowLeft.png" id="arrowLeft" class="clickMe"/>
-        <img src="image/arrowRight.png" id="arrowRight" class="clickMe"/>
+        <img src="image/arrowLeft.png" id="arrowLeft" class="clickMe" />
+        <img src="image/arrowRight.png" id="arrowRight" class="clickMe" />
     </div>
     <div class="horses">
-        <h2>A Funny Ride</h2>
-        <form class="horse1">
-            <label>
-                Check 	availability<br />
-                <input type="text" name="checkDate" id="datepickerHorse" /><br />
-            </label>
-        </form>
-        <form class="horse1">
-            <fieldset>
-                <legend class="legend">Your age is:</legend>
-                <input type="radio" name="age" value="0-6" class="checkAge"/> <label for="0-6">0-6</label><br />
-                <input type="radio" name="age" value="7-15" class="checkAge"/> <label for="7-15">7-15</label><br />
-                <input type="radio" name="age" value="16-over" class="checkAge"/> <label for="16-Over5">16-Over</label>
-            </fieldset>
-
-        </form>
+        <div id="availability">
+            <h2>A Funny Ride</h2>
+            <form>
+                <label>
+                    Check 	availability<br />
+                    <input type="text" name="checkDate" id="datepickerHorse" /> <br />
+                </label>
+                <button type="submit" id="submitDay">Check</button>
+            </form>
+        </div>
+        <div id="horse1">
+            <form>
+                <fieldset>
+                    <legend class="legend">Your age is:</legend>
+                    <input type="radio" name="age" value="0-6" class="checkAge" /> <label for="0-6">0-6</label><br />
+                    <input type="radio" name="age" value="7-15" class="checkAge" /> <label for="7-15">7-15</label><br />
+                    <input type="radio" name="age" value="16-over" class="checkAge" /> <label for="16-Over5">16-Over</label>
+                </fieldset>
+            </form>
+        </div>
         <img src="image/pony.jpg" id="pony" class="showHorse" />
         <img src="image/medio.jpg" id="medio" class="showHorse" />
         <img src="image/grande.jpg" id="grande" class="showHorse" />
-    </div>    
-<script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <script src="https://code.jquery.com/ui/1.12.4.js"></script>
+    </div>
+    <!--<script src="js/r.js" data-main="js/app"></script>-->
+    <!--<script src="/js/jquery-ui.js"></script>
+    <script src="/js/jquery.js"></script>-->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- <!--   <script src="js/natureJS.js"></script>-->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
+
 </body>
 </html>

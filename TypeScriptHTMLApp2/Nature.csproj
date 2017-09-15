@@ -22,6 +22,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\jquery-ui.structure.css" />
+    <Content Include="css\jquery-ui.theme.css" />
     <Content Include="css\nature.css" />
     <Content Include="image\261.jpg" />
     <Content Include="image\airdryer.png" />
@@ -44,6 +46,7 @@
     <Content Include="image\horse.jpg" />
     <Content Include="image\interno.jpg" />
     <Content Include="image\logo.png" />
+    <Content Include="image\logoCalendar.png" />
     <Content Include="image\medio.jpg" />
     <Content Include="image\minibar.png" />
     <Content Include="image\notte.jpeg" />
@@ -56,12 +59,17 @@
     <Content Include="image\way.jpg" />
     <Content Include="image\wifi.png" />
     <Content Include="index.html" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="js\jquery-ui.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="js\r.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="js\app.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jqueryui\jqueryui.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\require\require.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -71,6 +79,16 @@
     <None Include="web.Release.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FunScript.TypeScript.Binding.lib, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.lib.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.lib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FunScript.TypeScript.Binding.require, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FunScript.TypeScript.Binding.require.1.1.0.37\lib\net40\FunScript.TypeScript.Binding.require.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
