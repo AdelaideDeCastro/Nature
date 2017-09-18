@@ -127,12 +127,15 @@ function checkDateIn() {
                 $('.checkAge').click(function (evt) {
                     if ((evt.currentTarget as any).value == "0-6") {
                         $('#pony.showHorse').css("display", "block");
+                        $('#medio.showHorse, #grande.showHorse').css('display', 'none');
                     }
                     else if ((evt.currentTarget as any).value == "7-15") {
                         $('#medio.showHorse').css("display", "block");
+                        $('#pony.showHorse, #grande.showHorse').css('display', 'none');
                     }
                     else {
                         $('#grande.showHorse').css("display", "block");
+                        $('#pony.showHorse, #medio.showHorse').css('display', 'none');
                     }
                     $('#submitDay').removeClass('disabled');
                 }
