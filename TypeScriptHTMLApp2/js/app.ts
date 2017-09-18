@@ -29,6 +29,15 @@
 
 
 window.onload = function () {
+
+        $("#dialog").dialog({
+            autoOpen: true,
+            show: {
+                effect: "blind",
+                duration: 1000
+            }
+        });
+
     let i = 0;
     showImage(i);
     checkDateIn();
@@ -99,7 +108,7 @@ function checkDateIn() {
             let sD = new Date(dateText);
             $('#datepicker').datepicker('option', 'maxDate', sD);
         }
-    })
+    });
 
         let tomorrow2 = new Date(today.getTime() + 24 * 60 * 60 * 1000 * 182.5);
         $('#datepickerHorse').datepicker({
@@ -113,68 +122,21 @@ function checkDateIn() {
             minDate: new Date,
             maxDate: tomorrow2,
             onSelect: function (dateText) {
-                let sD = new Date(dateText);
-                $('#dateRangepicker').datepicker('option', 'maxDate', sD);
-            }
-        })
-    $('#submitDay').click(function () {
-        $('#horse1').css('display', 'block');
+                $('#age').css('display', 'block');
 
-        $('.checkAge').click(function (evt) {
-            if ((evt.currentTarget as any).value == "0-6") {
-                $('#pony.showHorse').css("display", "block");
+                $('.checkAge').click(function (evt) {
+                    if ((evt.currentTarget as any).value == "0-6") {
+                        $('#pony.showHorse').css("display", "block");
+                    }
+                    else if ((evt.currentTarget as any).value == "7-15") {
+                        $('#medio.showHorse').css("display", "block");
+                    }
+                    else {
+                        $('#grande.showHorse').css("display", "block");
+                    }
+                    $('#submitDay').removeClass('disabled');
+                }
+                )
             }
-            else if ((evt.currentTarget as any).value == "7-15") {
-                $('#medio.showHorse').css("display", "block");
-            }
-            else {
-                $('#grande.showHorse').css("display", "block");
-            }
-        }
-        )
-    }
-    )
+        });
 }
-
-//function checkHorseRide() {
-//    $('#datepickerHorse').datepicker({
-//        showAnim: "fold",
-//        showOn: "button",
-//        buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
-//        buttonImageOnly: true,
-//        showButtonPanel: true,
-//        showOtherMonths: true,
-//        stepMonths: 1
-//    }
-//    )
-//}
-
-//function horseRide() {
-//    let age;
-//    $('checkHorseRide').click(function () {
-//        $(this).datepicker({
-//            showAnim: "fold",
-//            showOn: "button",
-//            buttonImageOnly: true,
-//            showButtonPanel: true,
-//            showOtherMonths: true,
-//            stepMonths: 1
-//        })
-//        $('#submitDay').click(function () {
-//            $('#horse1').css('display', 'block')
-//        }
-//        )
-//    })
-//    $('.checkAge').click(function (evt) {
-//        if ((evt.currentTarget as any).value == "0-6") {
-//            $('#pony.showHorse').css("display", "block");
-//        }
-//        else if ((evt.currentTarget as any).value == "7-15") {
-//            $('#medio.showHorse').css("display", "block");
-//        }
-//        else {
-//            $('#grande.showHorse').css("display", "block");
-//        }
-//    }
-//    )
-//}

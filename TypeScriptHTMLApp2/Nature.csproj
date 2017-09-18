@@ -31,6 +31,7 @@
     <Content Include="image\appartamento.jpeg" />
     <Content Include="image\arrowLeft.png" />
     <Content Include="image\arrowRight.png" />
+    <Content Include="image\back_image.jpg" />
     <Content Include="image\bath.png" />
     <Content Include="image\botanica.jpeg" />
     <Content Include="image\cascina.jpg" />
@@ -47,11 +48,13 @@
     <Content Include="image\interno.jpg" />
     <Content Include="image\logo.png" />
     <Content Include="image\logoCalendar.png" />
+    <Content Include="image\logo_horse.jpg" />
     <Content Include="image\medio.jpg" />
     <Content Include="image\minibar.png" />
     <Content Include="image\notte.jpeg" />
     <Content Include="image\pavone.jpg" />
     <Content Include="image\pony.jpg" />
+    <Content Include="image\sales.jpg" />
     <Content Include="image\secinterno.jfif" />
     <Content Include="image\servizi_icone_ita.fw_.png" />
     <Content Include="image\suite_sentiero.jpeg" />

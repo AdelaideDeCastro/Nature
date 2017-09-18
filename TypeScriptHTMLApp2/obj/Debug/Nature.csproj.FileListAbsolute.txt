@@ -11,3 +11,4 @@ C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.dll
 C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.pdb
 C:\Repository\Nature\TypeScriptHTMLApp2\bin\FunScript.TypeScript.Binding.lib.dll
 C:\Repository\Nature\TypeScriptHTMLApp2\bin\FunScript.TypeScript.Binding.require.dll
+C:\Repository\Nature\TypeScriptHTMLApp2\obj\Debug\Nature.csprojResolveAssemblyReference.cache

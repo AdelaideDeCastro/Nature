@@ -8,95 +8,99 @@
     <link rel="stylesheet" href="css/nature.css" type="text/css" />
 </head>
 <body>
-    <div id="container">
-        <img src="image/logo.png" />
-        <div id="reservation">
-            <h2>Request a free estimate</h2>
-            <div class="day">
-                <form>
-                    <label for="datepicker">
-                        Check- in<br />
-                    </label>
-                        <input type="text" name="checkDatein" id="datepicker" /><br/>
-                    <label for="dateRangepicker">
-                        Check-out<br />
-                    </label>
-                        <input type="text" name="checkDateout" id="dateRangepicker" /><br />
-                    <label for="numadults">
-                        Adults<br />
-                    </label>
-                        <input type="number" name="adults" min="1" max="20" id="numadults" /><br />
-                    <label for="numchildren">
-                        Children<br />
-                    </label>
-                        <input type="number" name="children" min="0" max="10" id="numchildren" /><br />
-                    <label>
-                        Name<br />
-                    </label>
-                        <input type="text" name="firstname" value="" /><br />
-                    <label>
-                        Email<br />
-                    </label>
-                        <input type="email" /><br />
-                    <label>
-                        Phone<br />
-                    </label>
-                        <input type="tel" /><br />
-                    <label>
-                        Request<br />
-                    </label>
-                        <textarea rows="8" cols="50" id="textarea"></textarea><br />
-                        <input type="radio" name="accept" value="yes" />Agree with  Terms & Conditions<br />
-                        <button type="submit" id="">Send</button>
-
+    <div id="dialog">
+    </div>
+    <div/>
+        <div id="container">
+            <img src="image/logo.png" />
+            <div id="reservation">
+                <h2>Request a free estimate</h2>
+                <div class="day">
+                    <form>
+                        <label for="datepicker">
+                            Check- in<br />
+                        </label>
+                            <input type="text" name="checkDatein" id="datepicker" /><br />
+                            <label for="dateRangepicker">
+                                Check-out<br />
+                            </label>
+                            <input type="text" name="checkDateout" id="dateRangepicker" /><br />
+                            <label for="numAdults">
+                                Adults<br />
+                            </label>
+                            <input type="number" name="adults" min="1" max="20" id="numadults" /><br />
+                            <label for="numChildren">
+                                Children<br />
+                            </label>
+                            <input type="number" name="children" min="0" max="10" id="numchildren" /><br />
+                            <label for="fullName">
+                                Name<br />
+                            </label>
+                            <input type="text" name="firstname" value="" placeholder="Fullname"/><br />
+                            <label for="emailAddress">
+                                Email<br />
+                            </label>
+                            <input type="email" /><br />
+                            <label for="phoneNumber">
+                                Phone<br />
+                            </label>
+                            <input type="tel" /><br />
+                            <label for="characters">
+                                Request<br />
+                            </label>
+                                <textarea rows="8" cols="50" id="textarea"></textarea><br />
+                            <label for="terms">
+                                <input type="radio" name="accept" value="yes" />Agree with  Terms & Conditions<br />
+                            </label>
+                                <button type="submit" class="button">Send</button>
 </form>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="showImage">
-        <img src="image/cascina.jpg" class="showMe" id="first" />
-        <img src="image/interno.jpg" class="showMe" />
-        <img src="image/esterno.jpeg" class="showMe" />
-        <img src="image/evento.jpeg" class="showMe" />
-        <img src="image/giochi.jpeg" class="showMe" />
-        <img src="image/notte.jpeg" class="showMe" />
-        <img src="image/pavone.jpg" class="showMe" />
-        <img src="image/animali.jpeg" class="showMe" />
-        <img src="image/arrowLeft.png" id="arrowLeft" class="clickMe" />
-        <img src="image/arrowRight.png" id="arrowRight" class="clickMe" />
-    </div>
-    <div class="horses">
-        <div id="availability">
-            <h2>A Funny Ride</h2>
-            <form>
-                <label>
-                    Check 	availability<br />
-                    <input type="text" name="checkDate" id="datepickerHorse" /> <br />
-                </label>
-                <button type="submit" id="submitDay">Check</button>
-            </form>
+        <div id="showImage">
+            <img src="image/cascina.jpg" class="showMe" id="first" />
+            <img src="image/interno.jpg" class="showMe" />
+            <img src="image/esterno.jpeg" class="showMe" />
+            <img src="image/evento.jpeg" class="showMe" />
+            <img src="image/giochi.jpeg" class="showMe" />
+            <img src="image/notte.jpeg" class="showMe" />
+            <img src="image/pavone.jpg" class="showMe" />
+            <img src="image/animali.jpeg" class="showMe" />
+            <img src="image/arrowLeft.png" id="arrowLeft" class="clickMe" />
+            <img src="image/arrowRight.png" id="arrowRight" class="clickMe" />
         </div>
-        <div id="horse1">
-            <form>
-                <fieldset>
-                    <legend class="legend">Your age is:</legend>
-                    <input type="radio" name="age" value="0-6" class="checkAge" /> <label for="0-6">0-6</label><br />
-                    <input type="radio" name="age" value="7-15" class="checkAge" /> <label for="7-15">7-15</label><br />
-                    <input type="radio" name="age" value="16-over" class="checkAge" /> <label for="16-Over5">16-Over</label>
-                </fieldset>
-            </form>
+        <div class="horses">
+            <div id="availability">
+                <h2>A Funny Ride</h2>
+                <div id="horse1">
+                    <form>
+                        <label>
+                            Check 	availability<br />
+                            <input type="text" name="checkDate" id="datepickerHorse" /> <br />
+                        </label>
+                        <div id="age">
+                            <fieldset>
+                                <legend class="legend">Your age is:</legend>
+                                <input type="radio" name="age" value="0-6" class="checkAge" /> <label for="0-6">0-6</label><br />
+                                <input type="radio" name="age" value="7-15" class="checkAge" /> <label for="7-15">7-15</label><br />
+                                <input type="radio" name="age" value="16-over" class="checkAge" /> <label for="16-Over5">16-Over</label>
+                            </fieldset>
+                            <button type="submit" id="submitDay" class="button disabled">Check</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <img src="image/pony.jpg" id="pony" class="showHorse" />
+            <img src="image/medio.jpg" id="medio" class="showHorse" />
+            <img src="image/grande.jpg" id="grande" class="showHorse" />
         </div>
-        <img src="image/pony.jpg" id="pony" class="showHorse" />
-        <img src="image/medio.jpg" id="medio" class="showHorse" />
-        <img src="image/grande.jpg" id="grande" class="showHorse" />
-    </div>
-    <!--<script src="js/r.js" data-main="js/app"></script>-->
-    <!--<script src="/js/jquery-ui.js"></script>
-    <script src="/js/jquery.js"></script>-->
+        <!--<script src="js/r.js" data-main="js/app"></script>-->
+        <!--<script src="/js/jquery-ui.js"></script>
+        <script src="/js/jquery.js"></script>-->
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="/js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="/js/app.js"></script>
 
 </body>
 </html>
