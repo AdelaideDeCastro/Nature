@@ -30,19 +30,18 @@
 
 window.onload = function () {
 
-        $("#dialog").dialog({
-            autoOpen: true,
-            show: {
-                effect: "blind",
-                duration: 1000
-            }
-        });
+    $("#dialog").dialog({
+        autoOpen: true,
+        show: {
+            effect: "blind",
+            duration: 1000
+        }
+    });
 
     let i = 0;
+
     showImage(i);
     checkDateIn();
-
-
 }
 
 function showImage(i) {
@@ -110,36 +109,51 @@ function checkDateIn() {
         }
     });
 
-        let tomorrow2 = new Date(today.getTime() + 24 * 60 * 60 * 1000 * 182.5);
-        $('#datepickerHorse').datepicker({
-            showAnim: "fold",
-            showOn: "button",
-            buttonImage: "image/logoCalendar.png",
-            buttonImageOnly: true,
-            showButtonPanel: true,
-            showOtherMonths: true,
-            stepMonths: 1,
-            minDate: new Date,
-            maxDate: tomorrow2,
-            onSelect: function (dateText) {
-                $('#age').css('display', 'block');
+    let tomorrow2 = new Date(today.getTime() + 24 * 60 * 60 * 1000 * 182.5);
+    $('#datepickerHorse').datepicker({
+        beforeShowDay: deleteDay,
+        showAnim: "fold",
+        showOn: "button",
+        buttonImage: "image/logoCalendar.png",
+        buttonImageOnly: true,
+        showButtonPanel: true,
+        showOtherMonths: true,
+        stepMonths: 1,
+        minDate: new Date,
+        maxDate: tomorrow2,
+        onSelect: function (dateText) {
+            $('#age').css('display', 'block');
 
-                $('.checkAge').click(function (evt) {
-                    if ((evt.currentTarget as any).value == "0-6") {
-                        $('#pony.showHorse').css("display", "block");
-                        $('#medio.showHorse, #grande.showHorse').css('display', 'none');
-                    }
-                    else if ((evt.currentTarget as any).value == "7-15") {
-                        $('#medio.showHorse').css("display", "block");
-                        $('#pony.showHorse, #grande.showHorse').css('display', 'none');
-                    }
-                    else {
-                        $('#grande.showHorse').css("display", "block");
-                        $('#pony.showHorse, #medio.showHorse').css('display', 'none');
-                    }
-                    $('#submitDay').removeClass('disabled');
+            $('.checkAge').click(function (evt) {
+                if ((evt.currentTarget as any).value == "0-6") {
+                    $('#pony.showHorse').css("display", "block");
+                    $('#medio.showHorse, #grande.showHorse').css('display', 'none');
                 }
-                )
+                else if ((evt.currentTarget as any).value == "7-15") {
+                    $('#medio.showHorse').css("display", "block");
+                    $('#pony.showHorse, #grande.showHorse').css('display', 'none');
+                }
+                else {
+                    $('#grande.showHorse').css("display", "block");
+                    $('#pony.showHorse, #medio.showHorse').css('display', 'none');
+                }
+                $('#submitDay').removeClass('disabled');
             }
-        });
+            )
+        }
+    });
+}
+
+function deleteDay(date) {
+    let arrayDay = ['01-01-2017', '01-06-2017', '08-15-2017', '12-24-2017', '12-25-2017', '12-31-2017'];
+    let index_i = arrayDay.length;
+    let m = date.getMonth();
+    let d = date.getDate();
+    let y = date.getFullYear();
+    for (index_i = 0; index_i <= arrayDay.length; index_i++) {
+        if ($.inArray((m + 1) + '-' + d + '-' + y, arrayDay) != -1 || new Date() > date) {
+            return false;
+        }
+        return true;
+    }
 }

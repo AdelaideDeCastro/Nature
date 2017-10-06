@@ -94,6 +94,7 @@ function checkDateIn() {
     });
     var tomorrow2 = new Date(today.getTime() + 24 * 60 * 60 * 1000 * 182.5);
     $('#datepickerHorse').datepicker({
+        beforeShowDay: deleteDay,
         showAnim: "fold",
         showOn: "button",
         buttonImage: "image/logoCalendar.png",
@@ -122,5 +123,18 @@ function checkDateIn() {
             });
         }
     });
+}
+function deleteDay(date) {
+    var arrayDay = ['01-01-2017', '01-06-2017', '08-15-2017', '12-24-2017', '12-25-2017', '12-31-2017'];
+    var index_i = arrayDay.length;
+    var m = date.getMonth();
+    var d = date.getDate();
+    var y = date.getFullYear();
+    for (index_i = 0; index_i <= arrayDay.length; index_i++) {
+        if ($.inArray((m + 1) + '-' + d + '-' + y, arrayDay) != -1 || new Date() > date) {
+            return false;
+        }
+        return true;
+    }
 }
 //# sourceMappingURL=app.js.map
